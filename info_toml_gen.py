@@ -1,11 +1,10 @@
 from copy import deepcopy
-import toml
-import os
-import sys
+import toml, os, sys
 
-valid_answers = ["y", "ye", "yes", "no", "n"]
+
 yeses = ["y", "ye", "yes"]
 nos = ["no", "n"]
+valid_answers = yeses + nos
 modinfo = {
     "display_name": None,
     "description": None,
@@ -20,7 +19,7 @@ def get_category(mod_subpaths: list):
         "fighter": "Fighter",
         "stage": "Stage",
         "effect": "Effect",
-        "stream": "Music",
+        "stream;": "Music",
         "ui": "UI"
     }
     mod_subpaths.sort()
