@@ -19,7 +19,7 @@ def get_category(mod_subpaths: list):
         "fighter": "Fighter",
         "stage": "Stage",
         "effect": "Effect",
-        "stream;": "Music",
+        "stream;": "Audio",
         "ui": "UI"
     }
     mod_subpaths.sort()
