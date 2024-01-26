@@ -2,8 +2,8 @@ from copy import deepcopy
 import toml, os, sys
 
 
-yeses = ["y", "ye", "yes"]
-nos = ["no", "n"]
+yeses = ["y", "ye", "yes", "yep", "yeah", "uh-huh"]
+nos = ["no", "n", "nope", "nah", "nuh-uh"]
 valid_answers = yeses + nos
 modinfo = {
     "display_name": None,
