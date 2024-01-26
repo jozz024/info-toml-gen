@@ -1,7 +1,6 @@
 from copy import deepcopy
 import toml, os, sys
 
-
 yeses = ["y", "ye", "yes"]
 nos = ["no", "n"]
 valid_answers = yeses + nos
@@ -12,7 +11,6 @@ modinfo = {
     "category": None,
     "authors": None
 }
-
 
 def get_category(mod_subpaths: list):
     categories = {
@@ -34,6 +32,7 @@ def main(mods_path, ask_name, ask_author, ask_desc, ask_ver, ask_cat):
             print(f"Mod found! Directory name is {os.path.basename(paths)}.")
         else:
             continue
+            
         new_toml = deepcopy(modinfo)
         subdirs = [d for d in os.listdir(os.path.join(mods_path, paths)) if "info.toml" not in os.listdir(os.path.join(mods_path, paths))]
         if ask_cat in nos:
